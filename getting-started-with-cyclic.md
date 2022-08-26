@@ -7,7 +7,7 @@ layout: default
 
 ![Cyclic Logo](/media/cyclic-logo.png)
 
-The main server environment that we will be using in WEB322 is **Cyclic**. From their website:
+The main server environment that we will be using in WEB322 is [Cyclic](https://www.cyclic.sh/). From their website:
 
 > **CYCLIC IS SERVERLESS**
 >
@@ -27,7 +27,7 @@ Essentially, Cyclic manages the hardware infrastructure and deployment tasks for
 
 To get started, developers push their code on GitHub and Cyclic does the rest.  Additionally, Cyclic provides a range of projects as starters. These can be used to get started quickly or can be used as reference implementations to see how a particular framework can be deployed effectively.  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
@@ -120,7 +120,7 @@ node_modules
 
 #### Create a GitHub Repository
 
-For Cyclic to gain access to our code, we must first place it on GitHub.  The first step in this process is creating a GitHub repository for your code:
+For Cyclic to gain access to our code, we must place it on GitHub.  Therefore, the first step in this process is creating a GitHub repository for your code:
 
 1. Sign in to your GitHub account.
 
