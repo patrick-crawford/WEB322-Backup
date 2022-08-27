@@ -25,7 +25,7 @@ The main server environment that we will be using in WEB322 is [Cyclic](https://
 
 Essentially, Cyclic manages the hardware infrastructure and deployment tasks for our node.js applications in a remote environment. Apps deployed using Cyclic are built and deployed into AWS where a serverless app is pre-provisioned using [cloudformation](https://aws.amazon.com/cloudformation/).  
 
-To get started, developers push their code on GitHub and Cyclic does the rest.  Additionally, Cyclic provides a range of projects as starters. These can be used to get started quickly or can be used as reference implementations to see how a particular framework can be deployed effectively.  
+To get started, developers push their code to GitHub and Cyclic does the rest.  Additionally, Cyclic provides a range of projects as starters. These can be used to get started quickly or can be used as reference implementations to see how a particular framework can be deployed effectively.  
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/iK3ael3pQw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -41,7 +41,7 @@ The best thing - **getting started is free!** - This is where we come in:
 
 - To download git, proceed to [this download page](https://git-scm.com/downloads) and download git for your operating system.
 
-- Proceed to install git with the default settings. Once this is complete, you can verify that it is installed correctly by opening a command prompt / terminal and issuing the command **git \-\-version**. This should output something like: git version 2.10.1 ( ... ). If it does not output the installed version of git, then something is wrong and it is not installed correctly.
+- Proceed to install git with the default settings. Once this is complete, you can verify that it is installed correctly by opening a command prompt / terminal and issuing the command **git \-\-version**. This should output something like: git version 2.37.2 ( ... ). If it does not output the installed version of git, then something is wrong and it is not installed correctly.
 
 - Lastly, for Cyclic to gain access to our code, we must eventually place it on [GitHub](https://github.com/).  Therefore, you must also have account on [GitHub](https://github.com/) before proceeding.
 
@@ -120,7 +120,7 @@ node_modules
 
 #### Create a GitHub Repository
 
-For Cyclic to gain access to our code, we must place it on GitHub.  Therefore, the first step in this process is creating a GitHub repository for your code:
+For Cyclic to gain access to our code, we must place it on GitHub.  Therefore, the next step in this process is creating a GitHub repository for your code:
 
 1. Sign in to your GitHub account.
 
@@ -166,6 +166,8 @@ origin	git@github.com:patrick-crawford/helloworld.git (push)
 git push origin master
     ```
 
+    > **Important Note:**  If at this point, you see the error: "src refspec master does not match any" then "master" is not set as your default branch.  Execute the command `git status` to determine which branch you're on (it may be "main") and push that instead, ie: `git push origin main`, for example
+
 You can verify that the code was pushed by going back to your Browser and opening your GitHub repository.
 
 ![Repo screenshot](/media/github-4.png)
@@ -174,7 +176,57 @@ You can verify that the code was pushed by going back to your Browser and openin
 
 #### Connect the GitHub Repository to Cyclic
 
-Coming Soon...
+With our code finally online, we can sign into Cyclic and give it access to our code.  To proceed:
+
+1. Navigate to [https://www.cyclic.sh](https://www.cyclic.sh)
+
+2. Click the large blue **DEPLOY A STARTER NOW!** button beneath the "Full Stack Apps" header text.
+
+3. Click the "Continue with GitHub" button to sign in using your GitHub account
+
+4. Once you have logged in, click the green "Deploy" button in the "Create a New App" section:
+
+      ![Cyclic Create a New App](/media/cyclic-1.png)
+
+4. At the top of the page, switch to the "Link Your Own" tab and locate your public GitHub repository hosting your code (in this case "helloworld")
+
+      ![Cyclic Link GitHub](/media/cyclic-2.png)
+
+5. Once your repository is selected, click the "Connect" button
+
+6. Confirm access to the repository by once again entering your GitHub password
+
+7. Use the default settings for "Repository Access", ie: "Only Select Repositories", with your GitHub repository (ie: "helloworld" selected) and click **"Approve and Install"**
+
+      ![Github Approve and Install Cyclic](/media/cyclic-3.png)
+
+8.  Your code will now take a moment to build.  Once it's complete, you should see some confetti and the text **"You're Live!"** beneath the build log.  From here you can an click the "Go to Dashboard" button to see information about your deployed app, including the generated link to view it live!
+
+<br>
+
+#### Change the GitHub Repository to "Private"
+
+Finally, we must change the visibility of the created GitHub repository (ie: "helloworld") to private.  This will not affect Cyclic's access to the app, but it will keep your course work private:
+
+1. Access your repository on GitHub and hit the "Settings" tab
+
+      ![Github Settings Tab](/media/github-settings-1.png)
+
+2.  Scroll all the way the bottom to the "Danger Zone" and click the "Change Visibility" button
+
+      ![Github Change Visibility](/media/github-settings-2.png)
+
+3.  Follow the instructions and prompts from here to change the visibility to "private".
+
+<br>
+
+#### Make Changes and Push to GitHub
+
+Finally, our code is linked to Cyclic via. GitHub!  
+
+You should now be able to make any changes you wish and trigger a redeploy of your server on Cyclic by simply making changes locally, checking in your code using git and "pushing" it to GitHub, using the above instructions.
+
+Good luck and **Happy Coding!**
 
 
 
