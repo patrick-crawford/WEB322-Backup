@@ -230,7 +230,7 @@ While not all ES6 features are fully implemented in all browsers (JavaScript eng
 
 [![Node Logo](/media/uploads/2016/08/node-logo.jpg)](https://nodejs.org)
 
-At it’s core, Node.js is an open-source, cross-platform JavaScript runtime environment built on Chrome’s V8 JavaScript engine. It is typically used for developing server-side and networking applications and has recently exploded as the go-to application framework for many real-time web applications. This is largely due to it’s event-driven, non-blocking I/O model which ensures that the main thread of execution is not kept waiting for slow I/O operations (ie: stopping and waiting for a database query to complete). Some major companies using it include Paypal, eBay, GoDaddy, Heroku, Microsoft, Shutterstock, Uber, Wikia just to name a few.
+At it’s core, Node.js is an open-source, cross-platform JavaScript runtime environment built on Chrome’s V8 JavaScript engine. It is typically used for developing server-side and networking applications and has recently exploded as the go-to application framework for many real-time web applications. This is largely due to it’s event-driven, non-blocking I/O model which ensures that the main thread of execution is not kept waiting for slow I/O operations (ie: stopping and waiting for a database query to complete). Some major companies using it include Paypal, eBay, GoDaddy, Microsoft, Shutterstock, Uber, Wikia just to name a few.
 
 Node.js also has an expansive package ecosystem accessible via it’s Node Package Manager (NPM) utility. We will leverage this in WEB322 by experimenting with a number of popular, open-source modules including:
 

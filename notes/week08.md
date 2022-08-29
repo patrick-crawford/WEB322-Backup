@@ -47,7 +47,7 @@ Queries are still queries, and primary/foreign keys can still be called the same
 
 #### Setting up a MongoDB Atlas account
 
-MongoDB Atlas is an online service that hosts MongoDB in the cloud. You can sign up for a free account to use in this course with your Heroku account.
+MongoDB Atlas is an online service that hosts MongoDB in the cloud. You can sign up for a free account to use in this course with your Cyclic account.
 
 To get started signup for an account at [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas) and click the "Start free" button.
 
@@ -560,7 +560,7 @@ As you can see MongoDB threw back an error (E11000 duplicate key error). This is
 
 #### Week 8 example
 
-The week 8 example explores connecting to a mongoDB database and saving records for metadata about a photo upload. It allows the owner to upload a photo, add a name, email, and caption to the photo, and save it. The photo itself will be written to the file system and the supporting data about the photo will be saved in a document in the web322_week8_photos collection. Try it out with a local install of MongoDB and then try creating a MongoDB Atlas account and connecting your MongoDB Atlas db to your week8 example running on Heroku.
+The week 8 example explores connecting to a mongoDB database and saving records for metadata about a photo upload. It allows the owner to upload a photo, add a name, email, and caption to the photo, and save it. The photo itself will be written to the file system and the supporting data about the photo will be saved in a document in the web322_week8_photos collection. Try it out with a local install of MongoDB and then try creating a MongoDB Atlas account and connecting your MongoDB Atlas db to your week8 example running on Cyclic.
 
 <br>
 

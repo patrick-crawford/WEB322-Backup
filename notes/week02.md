@@ -563,13 +563,13 @@ To test your server, run **node week2** to see the results on **http://localhost
 
 <br>
 
-#### Running this example on Heroku
+#### Running this example on Cyclic
 
-If we wish to see this code run on Heroku, we follow the same procedure highlighted in the [Getting Started with Heroku](/getting-started-with-heroku) guide, ie, logging in to heroku (**heroku login**), creating an app (**heroku create**) and pushing our code to the server using **git push heroku master**.
+If we wish to see this code run on Cyclic, we follow the same procedure highlighted in the [Getting Started with Cyclic](/getting-started-with-cyclic) guide.
 
-However, there is one small change that we can make to our package.json file to ensure that the correct .js file is started on Heroku when we deploy our app. This is necessary if we have multiple server files for debugging and testing; as is the case with the “example code” from github – it contains multiple servers, one for each week!
+However, there is one small change that we can make to our package.json file to ensure that the correct .js file is started on Cyclic when we deploy our app. This is necessary if we have multiple server files for debugging and testing; as is the case with the “example code” from github – it contains multiple servers, one for each week!
 
-Fortunately, when you push your code to Heroku, the automated build process will run the command **npm start** once it is complete. This command (npm start) looks in the package.json file for the “start” property within the “scripts” property and run that command (ie, **node somefile.js**). Let’s make sure there is a start property on the scripts property of the package.json file for this example.
+Fortunately, when you push your code to GitHub, Cyclic will start the automated build process and run the command **npm start** once it is complete. This command (npm start) looks in the package.json file for the “start” property within the “scripts” property and run that command (ie, **node somefile.js**). Let’s make sure there is a start property on the scripts property of the package.json file for this example.
 
 ```json
 {
@@ -588,19 +588,8 @@ Fortunately, when you push your code to Heroku, the automated build process will
 }
 ```
 
-This will ensure that Heroku runs the week2.js file when you push your code to the new app!
+This will ensure that Cyclic runs the week2.js file when you push your code to the new app!
 
-If all goes well you should see a link to your project, allowing you to see this example running live on the web.
-
-From the Heroku website in your account, you can view the logs of your app and you should see something like this:
-
-```
-2017-03-11T21:32:25.893498+00:00 heroku[web.1]: Starting process with command `npm start`
-2017-03-11T21:32:30.214137+00:00 app[web.1]: 
-2017-03-11T21:32:30.214155+00:00 app[web.1]: > seneca@1.0.0 start /app
-2017-03-11T21:32:30.214156+00:00 app[web.1]: > node week2.js
-2017-03-11T21:32:30.214157+00:00 app[web.1]: 
-2017-03-11T21:32:30.594484+00:00 app[web.1]: Express http server listening on: 54172
 ```
 
 <br>

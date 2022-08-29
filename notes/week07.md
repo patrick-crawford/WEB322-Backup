@@ -21,31 +21,33 @@ From the PostgreSQL site, [postgresql.org](https://www.postgresql.org):
 
 This is a great choice for us for multiple reasons; it is open source, highly available, standards compliant and most importantly, works nicely with node.js.
 
-To get started, we need to **add a Postgre database (DB)** to a new (or existing) **Heroku application**. For specific instructions (and to refresh your memory) on creating a new application in Heroku, refer to the [Getting Started with Heroku](/getting-started-with-heroku) guide.
+To get started, proceed to [https://www.elephantsql.com](https://www.elephantsql.com) and click on the large green button: **"Get a managed database today"** and follow the below steps to set up the database:
 
-Once your app is up and running, [log into Heroku](https://id.heroku.com/login) and find your application on the dashboard - it should have an automatically generated name, like "cryptic-garden-34394". Next, follow the steps to set up your free Postgres database!
+1. Choose the "TINY TURTLE" option by clicking the **"Try now for FREE"** button
 
-1.  Click on your application to go to the resources screen  
-      
+2. At the next screen, click the **"sign in with GitHub"** button, since we already have a GitHub account
 
-2.  At the bottom, you will see an "Add-ons" section with a textbox "Quickly add add-ons from Elements" ![Find more add ons](/media/uploads/2017/02/heroku-screen1.png)
+3. Next, you will need to provide a "Name" for your instance.  You may choose anything you like for this field, ie "Seneca DB Instance".
 
-3.  Type "Heroku Postgres" into this textbox and click the "Heroku Postgres" item that comes up:![Heroku Postgres](/media/uploads/2017/02/heroku-screen4.png)
+4. Click the **"Select Region"** button
 
-4.  This will open a dialog window showing you that "Heroku Postgres" will be added to your application. Be sure you leave the "Plan name" to **Hobby Dev - Free** and click **Submit Order Form**  
-      
-    
-5.  This will create an item (link) in your "Add-ons" section with the label: **"Heroku Postgres :: Database"**. Click this link to go to the page for your new Postgres Database instance!  
-      
-    
-6.  Click the "settings" tab, which will reveal a "View Credentials" button on the right side of the page. This will expand a section that lists all of the credentials that you will use when connecting to this database.  
-      
-    
-7.  Write down the following information for: **Host**, **Database**, **User**, **Port**, **Password**. Note: You can always log back on to Heroku to see these credentials if you forget them.
+5. At the next screen, feel free to choose whichever data center you wish.  However, keeping the default (US-East-1, depending on where you are) is fine.  Click the green **"Review"** button to proceed
+
+6.  If everything looks correct (ie: "Total" should be "Free", the name should be what you typed in, etc.), click the **"Create Instance"** button.  This will take you to the "Instances" screen.
+
+7.  Click on the name of your newly created instance, ie "Seneca DB Instance"
+
+8.  Record the following information, as we will need it later:
+    - **Server**: something like: "jelani.db.elephantsql.com" - do not include the value in brackets after ".com"
+    - **User & Default database**:  This will serve as both your user name and database name
+    - **Password**:  This is the password that you will use to connect to this instance in your code
+
+    > **NOTE** You can always log back in to ElephantSQL if you forget the server / credentials
+
 
 #### pgAdmin
 
-Now that we have our brand new Postgres database created in Heroku, why don't we try to connect to it using the most popular GUI tool for Postgres; [pgAdmin](https://www.pgadmin.org). If you're following along from the lab room, it should already be installed. However, if you're configuring your home machine, you will need to download pgAdmin:
+Now that we have our brand new Postgres database created in ElephantSQL, why don't we try to connect to it using the most popular GUI tool for Postgres; [pgAdmin](https://www.pgadmin.org). If you're following along from the lab room, it should already be installed. However, if you're configuring your home machine, you will need to download pgAdmin:
 
 *   [https://www.pgadmin.org/download/](https://www.pgadmin.org/download/)
 
@@ -54,22 +56,22 @@ Once it is installed and you have opened the app, we need to configure it to con
 1.  Right Click on the **"Servers"** icon in the left pane (Under "Browser") and select **Create > Server**  
       
     
-2.  This will open the "Create - Server" Dialog window. Proceed to enter the following information about your Postgres Database on Heroku  
+2.  This will open the "Create - Server" Dialog window. Proceed to enter the following information about your Postgres Database on ElephantSQL  
       
 
     | Field                                 | Value                                                                                                  |
     |---------------------------------------|--------------------------------------------------------------------------------------------------------|
     | **Name**                                  | This can be anything you like, ie "Test Connection"                                                    |
-    | **(Connection Tab) Host**                 | This is the host for your Heroku Postgres DB, ie: **[some identifier].compute-1.amazonaws.com**             |
-    | **(Connection Tab) Port**                 | This is the port for your Heroku Postgres DB - it should be the same as what's already there, ie: **5432** |
-    | **(Connection Tab) Maintenance database** | Enter your randomly generated Heroku Postgres Database name here                                       |
-    | **(Connection Tab) Username**             | Enter your randomly generated Heroku Postgres Database user name here                                  |
-    | **(Connection Tab) Password**             | Enter your randomly generated Heroku Postgres Database password here                                   |
-    | **(Advanced Tab) DB restriction**         | Under the "Advanced" tab in the "DB Restriction" field, enter your Heroku Postgres Database name       |
+    | **(Connection Tab) Host**                 | This is the server for your ElephantSQL Postgres DB, ie: **jelani.db.elephantsql.com**             |
+    | **(Connection Tab) Port**                 | This is the port for your ElephantSQL Postgres DB - it should be the same as what's already there, ie: **5432** |
+    | **(Connection Tab) Maintenance database** | Enter your randomly generated "User & Default database" value here                                       |
+    | **(Connection Tab) Username**             | Enter your randomly generated "User & Default database" value here                                      |
+    | **(Connection Tab) Password**             | Enter your randomly generated ElephantSQL Postgres Database password here                                   |
+    | **(Advanced Tab) DB restriction**         | Under the "Advanced" tab in the "DB Restriction" field, enter your User & Default database" value and press the "enter" key       |
     
-    Once you have entered all of your information, hit the "Ok" button and click "Servers" in the left pane to expand your server connections. If you entered valid information for the above fields, you should see your Heroku Postgres DB Connection. Expand this item and the following **"Databases (1)"** item, and you should see your database. Expand this item, as well as the nested **"Schemas (1)"** item, followed by the **"public"** item, and you should be presented with something that looks like this:
+    Once you have entered all of your information, hit the "Save" button and click "Servers" in the left pane to expand your server connections. If you entered valid information for the above fields, you should see your ElephantSQL Postgres DB Connection. Expand this item and the following **"Databases (1)"** item, and you should see your database. Expand this item, as well as the nested **"Schemas (1)"** item, followed by the **"public"** item, and you should be presented with something that looks like this:
     
-    ![heroku DB in pgAdmin](/media/uploads/2017/12/Screen-Shot-2017-12-01-at-9.26.24-AM.png)
+    ![DB in pgAdmin](/media/uploads/2017/12/Screen-Shot-2017-12-01-at-9.26.24-AM.png)
     
 **Success!** We will be keeping an eye on our data using this tool so leave it running in the background. Next, why don't we see if we can get our node.js server to connect to the database as well? For us to be able to connect to a relational database, we will need to use an existing module. Fortunately, **sequelize** will do exactly what we want.
 
@@ -117,7 +119,7 @@ sequelize
     });
 ```
 
-Where **database** is your randomly generated Heroku Postgres Database name, **user** is your username, **password** is your password and lastly, **host** will be your Heroku Postgres Database host url. Recall: all of this information is available online via the Heroku dashboard under **Resources > Add-ons - Heroku Postgres :: Database** for your specific app
+Where **database** is your randomly generated “User & Default database” value, **user** is also your randomly generated “User & Default database” value, **password** is your password and lastly, **host** will be your server url (as above). Recall: all of this information is available online via the ElephantSQL dashboard by clicking on your chosen instance name
 
 > **Quick Note:** If you wish to use "raw" with [Joins / Eager Loading](https://sequelize.org/master/manual/eager-loading.html), place the `{raw: true}` option on your individual queries (see the following issue here: [https://github.com/sequelize/sequelize/issues/6408](https://github.com/sequelize/sequelize/issues/6408))
 
@@ -179,7 +181,7 @@ sequelize.sync().then(function () {
 });
 ```
 
-Once again, **database** is your randomly generated Heroku Postgres Database name, **user** is your username, **password** is your password and **host** is your Heroku Postgres Database host url.
+Once again, **database** is your randomly generated “User & Default database” value, **user** is also your randomly generated “User & Default database” value, **password** is your password and lastly, **host** will be your server url.
 
 There is a lot going on in the above code - but before we walk through what everything is doing, try updating the above code with your database credentials and run it once again with **node server.js**. You should see the something very similar to the following output:
 
