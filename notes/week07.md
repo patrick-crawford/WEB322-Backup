@@ -249,7 +249,7 @@ sequelize.sync().then(function () {
 });
 ```
 
-The [sequelize.sync()](https://sequelize.org/master/class/lib/sequelize.js~Sequelize.html#instance-method-sync) operation needs to be completed before we can do anything else. This ensures that all of our models are represented in the database as tables. If we have defined a model in our code that doesn't correspond to a table in the database, **sequelize.sync()** will automatically create it (as we have seen).
+The [sequelize.sync()](https://sequelize.org/api/v6/class/src/sequelize.js~sequelize#instance-method-sync) operation needs to be completed before we can do anything else. This ensures that all of our models are represented in the database as tables. If we have defined a model in our code that doesn't correspond to a table in the database, **sequelize.sync()** will automatically create it (as we have seen).
 
 > **Important Note:** We **do not** have to sync() the database before every operation. Only once when the server starts to ensure that the models are correctly represented as tables within the database.
 
