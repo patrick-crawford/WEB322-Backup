@@ -212,7 +212,7 @@ If we wish to encrypt a plain text password (ie: "myPassword123"), we can use [b
 });
 ```
 
-Similairly, if we wish to compare the "hashed" text with plain text (to see if a user-entered password matches the value in the DB), we use:
+Similarly, if we wish to compare the "hashed" text with plain text (to see if a user-entered password matches the value in the DB), we use:
 
 ```javascript
 // Pull the password "hash" value from the DB and compare it to "myPassword123" (match)
