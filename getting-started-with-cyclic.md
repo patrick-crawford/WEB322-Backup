@@ -180,7 +180,7 @@ With our code finally online, we can sign into Cyclic and give it access to our 
 
 1. Navigate to [https://www.cyclic.sh](https://www.cyclic.sh)
 
-2. Click the large blue **DEPLOY A STARTER NOW!** button beneath the "Full Stack Apps" header text.
+2. Click the large **Deploy Now** button beneath the "Full Stack Apps" header text.
 
 3. Click the "Continue with GitHub" button to sign in using your GitHub account
 
