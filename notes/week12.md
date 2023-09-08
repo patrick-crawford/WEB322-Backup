@@ -19,23 +19,23 @@ Imagine using your online banking website or logging in to your social media acc
 
 Have a look at your favorite websites when you are about to login and look up to the left of the URL bar in your browser for a green lock icon in Chrome or Firefox. Click on it to view info about your connection with this website (screenshot taken in Firefox).  
   
-![https lock](/media/uploads/2016/08/https-lock.png)  
+![https lock](/WEB322-Backup/media/uploads/2016/08/https-lock.png)  
   
 Notice how it shows that the site is using a secure connection and that the certificate is verified by Symantec Corporation. This means CIBC is using a TLS certificate for their HTTPS communications that was purchased from Symantec (the makers of Norton Antivirus).
 
 Click on the 'More Information' for info about the certificate and connection. In Firefox you can see a little details pane like this:  
   
-![https certificate details](/media/uploads/2016/08/https-certificate-details.png)  
+![https certificate details](/WEB322-Backup/media/uploads/2016/08/https-certificate-details.png)  
   
 This pane tells us the website is using a 256 bit certificate using TLS 1.2 and that communication was encrypted before being sent over the internet. Sending your login credentials and retrieving back your banking info is all using encrypted packets between your web browser and the server. Anyone who might capture them in transit would not be able to obtain any useful information from the packets.
 
 Quick note: there are other security measures in place in the OSI stack that also make capturing these packets hard on it's own as well, but that's out of scope for this course. Just know that HTTPS encrypted communications is just one level of security implemented in the exchange of data between client and server.
 
-From this pane there is also a View Certificate button. ![https view certificate](/media/uploads/2016/08/https-view-certificate.png)  
+From this pane there is also a View Certificate button. ![https view certificate](/WEB322-Backup/media/uploads/2016/08/https-view-certificate.png)  
 
 Clicking this button shows you the full details of the certificate, who it was issued to, who issued it, when it was issued, and when it expires. This information can be very useful for validating if a certificate used on a website is trustworthy and that the site itself uses proper security measures. Some websites will try to use their own 'Self Signed Certificates'. We will get into that part next.  
   
-![https certificate viewer](/media/uploads/2016/08/https-certificate-viewer.png)  
+![https certificate viewer](/WEB322-Backup/media/uploads/2016/08/https-certificate-viewer.png)  
 
 <br>
 
@@ -146,11 +146,11 @@ You'll notice, depending on your browser that you will get a security warning if
 
 _Warning in Firefox_
 
-![https self signed certificate firefox](/media/uploads/2016/08/https-self-signed-cert.png) ![https self signed certificate advanced](/media/uploads/2016/08/https-self-signed-cert-advanced.png)
+![https self signed certificate firefox](/WEB322-Backup/media/uploads/2016/08/https-self-signed-cert.png) ![https self signed certificate advanced](/WEB322-Backup/media/uploads/2016/08/https-self-signed-cert-advanced.png)
 
 _Warning in Chrome_
 
-![https self signed certificate chrome](/media/uploads/2016/08/https-self-signed-cert-chrome.png)
+![https self signed certificate chrome](/WEB322-Backup/media/uploads/2016/08/https-self-signed-cert-chrome.png)
 
 > **NOTE:** If you do not see the option to "Proceed to localhost", then typing "**thisisunsafe**" will allow you to proceed.
 
@@ -160,11 +160,11 @@ Click the icon to the left of the url bar like before to examine the self signed
 
 _Warning in Firefox_
 
-![Certificate Error in Firefox](/media/uploads/2017/07/ff-cert-error.png)
+![Certificate Error in Firefox](/WEB322-Backup/media/uploads/2017/07/ff-cert-error.png)
 
 _Warning in Chrome_
 
-![Certificate Error in Chrome](/media/uploads/2017/07/chrome-cert-error.png)
+![Certificate Error in Chrome](/WEB322-Backup/media/uploads/2017/07/chrome-cert-error.png)
 
 Now, after accepting or adding an exception for the warning you should see your login page under https and be able to login with the same credentials as we used in week 10.
 

@@ -71,7 +71,7 @@ Once it is installed and you have opened the app, we need to configure it to con
     
     Once you have entered all of your information, hit the "Save" button and click "Servers" in the left pane to expand your server connections. If you entered valid information for the above fields, you should see your ElephantSQL Postgres DB Connection. Expand this item and the following **"Databases (1)"** item, and you should see your database. Expand this item, as well as the nested **"Schemas (1)"** item, followed by the **"public"** item, and you should be presented with something that looks like this:
     
-    ![DB in pgAdmin](/media/uploads/2017/12/Screen-Shot-2017-12-01-at-9.26.24-AM.png)
+    ![DB in pgAdmin](/WEB322-Backup/media/uploads/2017/12/Screen-Shot-2017-12-01-at-9.26.24-AM.png)
     
 **Success!** We will be keeping an eye on our data using this tool so leave it running in the background. Next, why don't we see if we can get our node.js server to connect to the database as well? For us to be able to connect to a relational database, we will need to use an existing module. Fortunately, **sequelize** will do exactly what we want.
 
@@ -192,11 +192,11 @@ success!
 
 It appears that Sequelize has done some of the heavy lifting for us. To confirm that the create operation was successful and that we have indeed persisted "Project1" in a new "Project" table, go back to your **pgAdmin** application, right-click on "**Tables (0)**" and choose "Refresh". You should now see our new "Projects" table in the list!  
     
-![pgAdmin with the Projects table](/media/uploads/2017/03/heroku-screen7.png)
+![pgAdmin with the Projects table](/WEB322-Backup/media/uploads/2017/03/heroku-screen7.png)
 
 To view the contents of the table, **right-click** on the **"Projects"** table and select **View Data > View Top 100 Rows**. This will open a new window with a grid view that you can use to explore the data in the table:  
     
-![View Project Data in pgAdmin](/media/uploads/2017/03/heroku-screen8.png)
+![View Project Data in pgAdmin](/WEB322-Backup/media/uploads/2017/03/heroku-screen8.png)
 
 You will notice that there are some columns in the "Project" table that we didn't define in our "Project" Model; specifically: **id**, **createdAt** and **updatedAt**; recall:
 

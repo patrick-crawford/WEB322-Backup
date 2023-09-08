@@ -357,11 +357,11 @@ Visual Studio Code has great debugging support for the node.js/express ecosystem
 
 To place a breakpoint, click just to the left of a line number in a file and a red circle will appear indicating the code execution will stop at this line when the debugger is running.
 
-![breakpoint](/media/uploads/2016/08/breakpoint.png)
+![breakpoint](/WEB322-Backup/media/uploads/2016/08/breakpoint.png)
 
 Next, you will notice that there is a tab on the left side of VS Code.
 
-![debug](/media/uploads/2016/08/debug2.png)
+![debug](/WEB322-Backup/media/uploads/2016/08/debug2.png)
 
 Click this after you have placed your breakpoints within your code to open the "debugger" panel.
 
@@ -369,11 +369,11 @@ From here, click on the first option "Run and Debug" - this will open a menu pro
 
 You can now open your browser and access your web app as usual.  However, this time whenever a breakpoint is encountered, the server will halt, allowing you to inspect your code:
 
-![inspectingdebugger](/media/uploads/2016/08/inspectingdebugger.png)
+![inspectingdebugger](/WEB322-Backup/media/uploads/2016/08/inspectingdebugger.png)
 
 When you are finished inspecting, you can press play to continue with execution to the next breakpoint, or stop the program with the stop button on the debugger control bar.
 
-![debuggercontrols](/media/uploads/2016/08/debuggercontrols2.png)
+![debuggercontrols](/WEB322-Backup/media/uploads/2016/08/debuggercontrols2.png)
 
 **Note:** If if the "Debug Console" tab is still active in the "integrated terminal" after you are finished debugging, simply click on the "Terminal" tab to return to the terminal.
 
@@ -385,11 +385,11 @@ Chrome, Firefox, and IE all include developer tool and each of those tools has a
 
 In Firefox, you can inspect the headers from the headers tab:
 
-![networktab-headers](/media/uploads/2016/08/networktab-headers.png)  
+![networktab-headers](/WEB322-Backup/media/uploads/2016/08/networktab-headers.png)  
 
 And the response from the server in the response tab. The Google Chrome network tools are slightly different, however all in-browser developer toolbars essentially make the same information available.
 
-![networktab-response](/media/uploads/2016/08/networktab-response.png)  
+![networktab-response](/WEB322-Backup/media/uploads/2016/08/networktab-response.png)  
 
 The network tab in the dev tools is one of the core tools for debugging on the client side. You can check the returned status code, see all the api requests being made, filter by just XHR requests, examine the cookies involved in the request and response, see request and response headers, and examine the data returned from a request.
 

@@ -9,7 +9,7 @@ layout: default
 
 #### Introduction to MongoDB
 
-![MongoDB-Logo.svg](/media/uploads/2016/08/MongoDB-Logo.svg_-300x82.png)  
+![MongoDB-Logo.svg](/WEB322-Backup/media/uploads/2016/08/MongoDB-Logo.svg_-300x82.png)  
 
 #### What is MongoDB?
 
@@ -53,21 +53,21 @@ To get started signup for an account at [https://www.mongodb.com/cloud/atlas](ht
 
 Once your account is setup, you will be taken to the start screen with a modal window suggesting you "Build my first cluster". You can close this modal window, as we will not be creating a cluster just yet. First, we want to ensure that we have selected all the free options, ie:  
 
-![Free Options](/media/uploads/2019/01/Atlas-Cluster-Free-Options.png)  
+![Free Options](/WEB322-Backup/media/uploads/2019/01/Atlas-Cluster-Free-Options.png)  
 
 Next, we should change the cluster name from "Cluster0" to something more recognizable, ie "SenecaWeb".
 
-![Cluster Rename](/media/uploads/2019/01/Atlas-Cluster-rename.png)  
+![Cluster Rename](/WEB322-Backup/media/uploads/2019/01/Atlas-Cluster-rename.png)  
 
 Once this is complete, we can go ahead and "Create Cluster"
 
-![Create Cluster](/media/uploads/2019/01/Atlas-Create-Cluster.png)  
+![Create Cluster](/WEB322-Backup/media/uploads/2019/01/Atlas-Create-Cluster.png)  
 
 Once you pass the Capcha test (proving you're human), you will be redirected to the main page for managing your clusters in MongoDB Atlas (Note: Feel free to close the "Get Started" checklist on the bottom left corner of the screen)
 
 Here, you should see a "Your cluster is being created." message. Before we proceed, we must wait for this to finish (it could be between 7-10 minutes).
 
-![Create Cluster 2](/media/uploads/2019/01/Atlas-Cluster-Creation.png)  
+![Create Cluster 2](/WEB322-Backup/media/uploads/2019/01/Atlas-Cluster-Creation.png)  
 
 Once your cluster has been created, you can click the "CONNECT" button. This will cause a new modal to appear, which will allow us to Whitelist IP Address to connect to the cluster, as well as to create a "MongoDB User".
 
@@ -77,7 +77,7 @@ Once your cluster has been created, you can click the "CONNECT" button. This wil
 
 Once this is complete, click the "Choose a connection method" button at the bottom of the modal window. This will bring you to a new screen allowing you to choose how you wish to "Connect to SenecaWeb":
 
-![Connect SenecaWeb](/media/uploads/2019/01/Atlas-Connect-SenecaWeb.png)  
+![Connect SenecaWeb](/WEB322-Backup/media/uploads/2019/01/Atlas-Connect-SenecaWeb.png)  
 
 From here, click on the "**Connect Your Application**" button.
 
@@ -93,15 +93,15 @@ Now that the "SenecaWeb" cluster is all set up, we can add a Database to connect
 
 To get started, click the blue "SenecaWeb" link from the "Clusters Overview" Section:
 
-![Clusters Overview](/media/uploads/2019/01/Atlas-Clusters-Overview.png)  
+![Clusters Overview](/WEB322-Backup/media/uploads/2019/01/Atlas-Clusters-Overview.png)  
 
 This will take you to a detailed view of your "SenecaWeb" cluster. From here, you will notice a "Collections" tab. Click this to open the data on all "Collections" contained in this cluster. Since we have not created any Databases yet, we will be greeted with the following message:
 
-![Add my Own Data](/media/uploads/2019/01/Atlas-Create-Database-update-1.png)  
+![Add my Own Data](/WEB322-Backup/media/uploads/2019/01/Atlas-Create-Database-update-1.png)  
 
 Go ahead and click the "Add my own data" button. This will open a small modal window asking for the "Database Name" and "Collection Name". For "Database Name" enter "web322_week8" and for "Collection Name" simply enter "tbd" since we don't know what collections we will have just yet, and we cannot proceed without entering one (Note: ensure that "CAPPED COLLECTION" remains unchecked). With the data entered, click the green "Create" button. Once this is complete, you will be shown the following information under "collections":
 
-![Add Collection](/media/uploads/2019/01/Atlas-Collection-tbd.png)  
+![Add Collection](/WEB322-Backup/media/uploads/2019/01/Atlas-Collection-tbd.png)  
 
 Unfortunately, we cannot have a Database in MongoDB Atlas without a collection, so leave "tbd" there for the time being. We can remove it later.
 

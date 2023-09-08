@@ -5,7 +5,7 @@ layout: default
 
 ## Getting Started with Cyclic
 
-![Cyclic Logo](/media/cyclic-logo.png)
+![Cyclic Logo](/WEB322-Backup/media/cyclic-logo.png)
 
 The main server environment that we will be using in WEB322 is [Cyclic](https://www.cyclic.sh/). From their website:
 
@@ -126,11 +126,11 @@ For Cyclic to gain access to our code, we must place it on GitHub.  Therefore, t
 
 2. Find and click a "+" button on the Navigation Bar. Then, choose "New Repository" from the dropdown menu. 
 
-      ![New repository button screenshot](/media/github-1.png)
+      ![New repository button screenshot](/WEB322-Backup/media/github-1.png)
 
 3. Fill in the repository name text field with the name of your project. Also, please make sure that the "Private" option is selected:
 
-      ![New repository page screenshot](/media/github-2.png)
+      ![New repository page screenshot](/WEB322-Backup/media/github-2.png)
 
 4. Once you're happy with the settings, hit the **"Create repository"** button.
 
@@ -142,7 +142,7 @@ Now that our GitHub repository is created, we can proceed to update it with our 
 
 1. First, go to your newly-created GitHub repository and click the "copy" button in the "Quick Setup" block:
 
-      ![Quick setup page screenshot](/media/github-3.png)
+      ![Quick setup page screenshot](/WEB322-Backup/media/github-3.png)
 
       This will copy the URL of your remote GitHub repository.
 
@@ -170,7 +170,7 @@ git push origin master
 
 You can verify that the code was pushed by going back to your Browser and opening your GitHub repository.
 
-![Repo screenshot](/media/github-4.png)
+![Repo screenshot](/WEB322-Backup/media/github-4.png)
 
 <br>
 
@@ -186,15 +186,15 @@ With our code finally online, we can sign into Cyclic and give it access to our 
 
 4. Once you have logged in, click the green "Deploy" button in the "Create a New App" section:
 
-      ![Cyclic Create a New App](/media/cyclic-1.png)
+      ![Cyclic Create a New App](/WEB322-Backup/media/cyclic-1.png)
 
 5. At the top of the page, switch to the "Link Your Own" tab and begin typing the name of the your private GitHub repository hosting your code (in this case "helloworld")
 
-      ![Cyclic Link GitHub](/media/cyclic-2.png)
+      ![Cyclic Link GitHub](/WEB322-Backup/media/cyclic-2.png)
 
 6. You will see that the repository is not found (this is because it is 'private') - proceed to click the "Add a private repo...".  This will open a new window to configure GitHub for Cyclic.  You can leave "all repositories" selected and click "Approve and install"
 
-      ![Cyclic Link GitHub](/media/cyclic-3.png)
+      ![Cyclic Link GitHub](/WEB322-Backup/media/cyclic-3.png)
 
 7. Select your newly added repository from the list and click the "Connect" button
 

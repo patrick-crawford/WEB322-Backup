@@ -7,7 +7,7 @@ layout: default
 
 ### Introduction to jQuery & Bootstrap Frameworks
 
-![jQuery Logo](/media/uploads/2016/08/jquery-logo.jpg)
+![jQuery Logo](/WEB322-Backup/media/uploads/2016/08/jquery-logo.jpg)
 
 From the jQuery website:
 
@@ -244,7 +244,7 @@ $.ajax({
 
 ### Bootstrap Framework
 
-![Bootstrap Logo](/media/uploads/2017/07/bootstrap-5-e1499300485358.png)
+![Bootstrap Logo](/WEB322-Backup/media/uploads/2017/07/bootstrap-5-e1499300485358.png)
 
 The Bootstrap framework is a set of **JavaScript** & **CSS** files that simplify the design of complex layouts & UI/UX functionality. It is often used as a starting point for modern websites, given its clean design patterns and unobtrusive JavaScript components. Bootstrap also has excellent [documentation](https://getbootstrap.com/docs/3.4/getting-started/), making it simple for developers to prototype web apps quickly and efficiently. It is for these reasons that it's been so widely adopted by the industry as the de facto starting point when building everything from simple static sites to complex web applications.
 
@@ -286,7 +286,7 @@ Using a **CDN**:
 
 Arguably one of the best features of the Bootstrap framework is it's [Responsive Grid System](https://getbootstrap.com/docs/3.4/css/#grid). CSS Grid systems have risen in popularity in recent years because they allow designers to easily create visually pleasing, clean layouts without manually fiddling with floats, margins, padding, flexbox, etc. Additionally, if a "responsive" grid system is used correctly, it can be very simple to create layouts that **also** conform to responsive design principles. Recall: responsive design can be defined as:
 
-> ![Responsive Sizing](/media/uploads/2017/07/responsive-design-illustration.jpg)  
+> ![Responsive Sizing](/WEB322-Backup/media/uploads/2017/07/responsive-design-illustration.jpg)  
 >   
 > ( img src: [https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-responsive-layout.php](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-responsive-layout.php) )  
 >   
@@ -313,17 +313,17 @@ Next, we must figure out how many "rows" we wish to include in our layout. For n
 
 To complete our "grid" we must choose how many columns we would like to add (we can have a different number in each row). In Bootstrap, we can add a **maximum of twelve (12)** columns. If we wish to have fewer columns (ie: 3 columns), we tell each column how many of the 12 columns it should take up. For example, if we want to have three (3) columns, each column would be as wide as **four (4) columns**, since 4 + 4 + 4 = 12\. Similarly, if we only wanted to have two (2) columns, each column would be as wide as **six (6) columns**, since 6 + 6 = 12, and so on:  
 
-![Grid Numbers](/media/uploads/2017/07/grid-numbers.png)
+![Grid Numbers](/WEB322-Backup/media/uploads/2017/07/grid-numbers.png)
 
 Once we have decided how many columns we want at the largest size, we must determine how each of those columns will **scale with the viewport**. The most common configuration has the grid starting out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium and larger) devices.
 
 To achieve this, we use the class **"col-md-*"** where ***** is how **wide** we want the columns to be at their (medium and larger) size. Let's say that each of our rows will have three (3) columns - in the largest size, it would appear as:  
 
-![3 Column Grid](/media/uploads/2017/07/grid-md-4.png)  
+![3 Column Grid](/WEB322-Backup/media/uploads/2017/07/grid-md-4.png)  
 
 However, in the mobile and tablet size (extra small to small range), our columns would appear stacked:  
 
-![Grid Stacked](/media/uploads/2017/07/grid-md-4-stacked.png)
+![Grid Stacked](/WEB322-Backup/media/uploads/2017/07/grid-md-4-stacked.png)
 
 To implement this in our example from above, we simply add three (3) columns in each "row":
 
@@ -363,7 +363,7 @@ If we want to be more specific with how the grids appear at each viewport size, 
 
 Sometimes our design requires columns to be "offset" from the left of the grid. For example, if we wanted to only use the 4 middle columns, we would create a single "col-md-4" and offset it by four (4) columns from the left. This can be accomplished with Bootstrap's **.col-x-offset-y** classes, where **x is the target size** (ie, "sm", "md", etc.) and **y is the number of columns** (1 - 12). For example (from the Boostrap documentation):  
 
-![Grid with Offset Columns](/media/uploads/2017/07/grid-md-4-offset.png)  
+![Grid with Offset Columns](/WEB322-Backup/media/uploads/2017/07/grid-md-4-offset.png)  
 
 ```html
 <div class="container">
@@ -394,7 +394,7 @@ Bootstrap comes with a wide range of [reusable components](https://getbootstrap.
 #### Glyphicons
 
 Bootstrap comes bundled with the premium icon font [Glyphicons](https://getbootstrap.com/docs/3.4/components/#glyphicons). Most modern web apps use icons to help the usability of their application, for example a "magnifying glass" ( ) for searching, or a "floppy disk" ( ) to indicate saving. As a way to offer the icons in as flexible a manner as possible (rendered "cleanly" at any size), special web fonts where introduced that contain the icons. This is where Glyphicons comes in - it is essentially a font that contains a large range of icons that we can use in our application. Since it is a font (represented as a vector), we can size the icon up or down depending on our needs using the "font-size" property, without any loss of quality:  
-![Glyphicon Sizing](/media/uploads/2017/07/icon-font.png)  
+![Glyphicon Sizing](/WEB322-Backup/media/uploads/2017/07/icon-font.png)  
 ( img src: [http://glyphicons.com](http://glyphicons.com/) )
 
 To incorporate an icon using Bootstrap's Glyphicons (often used in <button> elements), simply use the following code (in this case, we will use the "search" icon):
@@ -409,7 +409,7 @@ To incorporate an icon using Bootstrap's Glyphicons (often used in <button> elem
 
 Another important "component" that Bootstrap provides is a set of classes to [render buttons](https://getbootstrap.com/docs/3.4/css/#buttons). There is no escaping the need for buttons, whether they're hyperlinks ( &lt;a&gt;...&lt;/a&gt; ), buttons ( &lt;button&gt;...&lt;/button&gt; ) or input type=submit / button buttons ( &lt;input type="submit" /&gt;). Once again, Bootstrap comes to the rescue with a set of classes to create consistent, clean buttons:  
 
-![Button Colours](/media/uploads/2017/07/bootstrap-buttons.png)  
+![Button Colours](/WEB322-Backup/media/uploads/2017/07/bootstrap-buttons.png)  
 
 ```html
 <!-- Standard button -->
@@ -456,7 +456,7 @@ It is important to note that the classes used above (ie: ".btn", ".btn-primary",
 
 While the buttons rendered above look good and match Bootstrap's default style, we don't necessarily always want to render them in that size. To overcome this and add some flexibility to the sizing, Bootstrap has also provided the following sizing classes to work with buttons:  
 
-![Button Sizes](/media/uploads/2017/07/bootstrap-btn-sizes.png)  
+![Button Sizes](/WEB322-Backup/media/uploads/2017/07/bootstrap-btn-sizes.png)  
 
 ```html
 <p>
@@ -483,7 +483,7 @@ While the buttons rendered above look good and match Bootstrap's default style, 
 
 There are a few more interesting things that we can do to work with buttons (ie: setting ["active" state](https://getbootstrap.com/docs/3.4/css/#buttons-active), ["disabled" state](https://getbootstrap.com/docs/3.4/css/#buttons-disabled) & creating [block level buttons](https://getbootstrap.com/docs/3.4/css/#buttons-sizes)), however one of the coolest (and most useful) button treatments that Bootstrap provides is the "dropdown button":  
 
-![Button Dropdown](/media/uploads/2017/07/bootstrap-btn-dropdown.png)  
+![Button Dropdown](/WEB322-Backup/media/uploads/2017/07/bootstrap-btn-dropdown.png)  
 
 ```html
 <div class="dropdown">
@@ -508,15 +508,15 @@ Almost every website you visit or web app you use will feature some sort of **na
 
 **Full Navigation Bar**  
 
-![Navigation Bar Full](/media/uploads/2017/07/navbar-full.png)  
+![Navigation Bar Full](/WEB322-Backup/media/uploads/2017/07/navbar-full.png)  
 
 **Mobile (Compressed) Navigation Bar**  
 
-![Navigation Bar Mobile](/media/uploads/2017/07/navbar-mobile.png)  
+![Navigation Bar Mobile](/WEB322-Backup/media/uploads/2017/07/navbar-mobile.png)  
 
 **Mobile (Expanded) Navigation Bar**  
 
-![Navigation Bar Mobile Expanded](/media/uploads/2017/07/navbar-mobile-down.png)
+![Navigation Bar Mobile Expanded](/WEB322-Backup/media/uploads/2017/07/navbar-mobile-down.png)
 
 ```html
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -612,7 +612,7 @@ To get started using Bootstrap forms, you really only need to remember three cla
 
 > "Individual form controls automatically receive some global styling. All textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements with **.form-control** are set to **width: 100%;** by default. Wrap labels and controls in **.form-group** for optimum spacing."
 
-![Bootstrap Form](/media/uploads/2017/07/bootstrap-simple-form.png)
+![Bootstrap Form](/WEB322-Backup/media/uploads/2017/07/bootstrap-simple-form.png)
 
 ```html
 <form>
@@ -650,7 +650,7 @@ Due to time constraints, it is impossible to discuss all of the fantastic [Boots
 
 [Dismissible Alerts](https://getbootstrap.com/docs/3.4/javascript/#alerts) in Bootstrap are simply small divs that provide a temporary message to the user, ie: "Warning: your session will time out in 2 minutes". We often do not want to clutter the user interface with these alerts, so Bootstrap has included functionality to allow users to "dismiss" the alert (by pressing a close ("x") button). Additionally alerts can be given a different colour depending on the kind of alert, including: red ("alert-danger"), yellow ("alert-warning"), blue ("alert-info") and green ("alert-success"):  
 
-![Bootstrap Alert](/media/uploads/2017/07/alerts.png)
+![Bootstrap Alert](/WEB322-Backup/media/uploads/2017/07/alerts.png)
 
 ```html
 <div class="alert alert-danger alert-dismissible fade in" role="alert"> 
@@ -690,7 +690,7 @@ Tabs are an extremely common user-interface component. They have been used in th
 
 Once again the following code is largely boilerplate out of the box. As long as we follow the predefined structure, our tabs will function properly.  
 
-![Bootstrap Tab](/media/uploads/2017/07/tabs.png)
+![Bootstrap Tab](/WEB322-Backup/media/uploads/2017/07/tabs.png)
 
 ```html
 <!-- Nav tabs -->
@@ -747,7 +747,7 @@ The ["modal window"](https://getbootstrap.com/docs/3.4/javascript/#modals) is on
 
 The Bootstrap implementation is very clean and easy to use - it also has the bonus of ensuring that the generated modal windows are "responsive" and will not break the view or cause excessive scrolling when accessed on a mobile device. The following code is a simple example of how a modal window is defined and how it can be "wired up" to be opened by clicking a button.
 
-![Bootstrap Modal](/media/uploads/2017/07/modal.png)
+![Bootstrap Modal](/WEB322-Backup/media/uploads/2017/07/modal.png)
 
 ```html
 <!-- Button trigger modal -->

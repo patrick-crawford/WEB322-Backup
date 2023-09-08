@@ -7,7 +7,7 @@ layout: default
 
 ### Introduction to Node.js
 
-[![Node Logo](/media/uploads/2016/08/node-logo.jpg)](https://nodejs.org)
+[![Node Logo](/WEB322-Backup/media/uploads/2016/08/node-logo.jpg)](https://nodejs.org)
 
 As we learned last week, Node.js is actually a JavaScript runtime environment based on Chrome’s V8 engine. It is a command-line program (written in C++) that you can install on your local machine or on a web-server that will take your JavaScript code and execute it. This means that we don’t actually need a web browser to execute JavaScript at all – we just need a JavaScript engine. Why don’t we try a short example:
 
@@ -15,7 +15,7 @@ As we learned last week, Node.js is actually a JavaScript runtime environment ba
 2.  Make sure you have Visual Studio Code installed. As we discussed last week, this is an open-source, cross-platform development environment provided by Microsoft. While it is true that you can write your code in any text editor, Visual Studio Code works very nicely alongside Node.js and all examples going forward will assume that you are using Visual Studio Code. You can [download it here](https://code.visualstudio.com/download)<br><br>
 3.  On your Local computer, navigate to your desktop and **create a folder** called **Ex1**<br><br>
 4.  Open **Visual Studio Code** and select **File -> Open Folder**. Choose your newly created **“Ex1”** Folder and click **“Select Folder”**<br><br>
-5.  You should see an “Explorer” pane open on the left side with two items: “Open Editors” and “Ex1”. Click to expand “Ex1” and locate the “New File” button ( ![New File Button](/media/uploads/2016/09/vscode-new-file.jpg) ). Click this and type **“hello.js”.**<br><br>
+5.  You should see an “Explorer” pane open on the left side with two items: “Open Editors” and “Ex1”. Click to expand “Ex1” and locate the “New File” button ( ![New File Button](/WEB322-Backup/media/uploads/2016/09/vscode-new-file.jpg) ). Click this and type **“hello.js”.**<br><br>
 6.  You should now see your newly created “Hello.js” file in the editor. Enter the following line of code:
   
     ```javascript

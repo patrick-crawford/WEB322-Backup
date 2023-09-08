@@ -37,7 +37,7 @@ And here is an example of the ‘Set-Cookie’ header in a response from the ser
 
 > **Set-Cookie:**session=z80OxktaQTVma-Eclg.QfJOeQ6sTt2g7HfqjpqHlLsuC5ZFYltXmbs_5XuC5Naw-qVuYEItIYXOQZbEwhaEdcR7R35bmnUPLElJuWirq-AUS_K79TO7k9KhXrgUZvQb6gQxa_bcGBoH6onPMhCotDXagGXS2U-MjdsdCo2gtPXpjh0QkPw-oe3-oQr7kj2JidXlSlYweE8sFYsldfBPG3zDMly0MXbhOI4.14880447805.12090000.SRbFKSnQ1-tbEe8NTNxqQHPjnvOhUdC5B4VYs; path=/; expires=Sat, 11 Mar 2017 17:39:28 GMT; secure; httponly
 
-![An example of Cookie and Set-Cookie headers on blackboard](/media/uploads/2016/08/cookies.png)
+![An example of Cookie and Set-Cookie headers on blackboard](/WEB322-Backup/media/uploads/2016/08/cookies.png)
 
 An example of Cookie and Set-Cookie headers on blackboard
 
